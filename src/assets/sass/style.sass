@@ -1,0 +1,337 @@
+$main-color: #fff5ed
+$green-dark-color: #1f4034
+$orange-color: #ff7433
+@import url('https://fonts.googleapis.com/css2?family=Overpass:wght@200&display=swap')
+// $green-color: #13d11c
+
+    ///header//
+body
+    margin: 0
+    font-family: 'Overpass', sans-serif
+.wrapper__header
+    display: flex
+    justify-content: space-around
+    height: 27px
+.menu__head
+    display: none
+.wrapper
+    margin: 0 auto
+    padding: 10px
+    &__first-section
+        display: flex
+        justify-content: space-around
+        margin: 20px
+.header__btns
+    display: flex
+.butt
+    color: #fff
+    border: none
+    font-size: 12px
+    padding: 6px
+    border-radius: 6px
+    margin-right: 5px
+    font-family: 'Overpass', sans-serif
+.header
+    // justify-content: flex-end
+    // display: flex
+    &__logo
+        margin: auto 15px
+.w-logo
+    font-size: 20px
+    color: $green-dark-color
+.butt__green
+    background-color: $green-dark-color
+.butt__orange
+    background-color: $orange-color
+.hamburger-menu
+    display: block
+    z-index: 9
+    position: absolute
+#menu__toggle
+    opacity: 0
+#menu__toggle:checked + .menu__btn > span
+    transform: rotate(45deg)
+#menu__toggle:checked + .menu__btn >span::before
+    top: 0
+    transform: rotate(0deg)
+#menu__toggle:checked + .menu__btn > span::after
+    top: 0
+    transform: rotate(90deg)
+#menu__toggle:checked ~ .menu__box
+    left: 0 !important
+
+.menu__btn
+    position: fixed
+    top: 20px
+    left: 20px
+    width: 26px
+    height: 26px
+    cursor: pointer
+    z-index: 1
+.menu__btn > span,
+.menu__btn > span::before,
+.menu__btn > span::after
+    display: block
+    position: absolute
+    width: 100%
+    height: 2px
+    background-color: #100202
+    transition-duration: .25s
+.menu__btn > span::before
+    content: ''
+    top: -8px
+.menu__btn > span::after
+    content: ''
+    top: 8px
+
+.menu__box
+    display: block
+    position: fixed
+    top: 0
+    left: -100%
+    width: 300px
+    height: 100%
+    margin: 0
+    padding: 80px 0
+    list-style: none
+    background-color: #ECEFF1
+    box-shadow: 2px 2px 6px rgba(0, 0, 0, .4)
+    transition-duration: .25s
+.menu__item
+    display: block
+    padding: 12px 24px
+    color: #333
+    font-family: 'Overpass', sans-serif
+    font-size: 20px
+    font-weight: 600
+    text-decoration: none
+    transition-duration: .25s
+.menu__item:hover
+    background-color: #CFD8DC
+
+
+    //1 section///
+.head
+    background-color: $main-color
+    height: 43px
+
+.img-title
+    display: flex
+
+.img-f
+    background-image: url(https://i.pinimg.com/564x/4b/92/39/4b923929fd53b18a458512a065c635f8.jpg)
+    transform: translateX(-22%)
+.img-s
+    background-image: url(https://i.pinimg.com/564x/d9/5a/b5/d95ab55a294dd559f5ee4a994cde834e.jpg)
+    transform: translateX(-50%)
+
+.img__circle    
+    background-size: contain
+    background-repeat: no-repeat
+    height: 132px
+    width: 88px
+    border-radius: 57px
+
+.first-section
+    background-color: $green-dark-color
+.main-title
+    display: flex
+    padding: 5px
+h1
+    color: #fff
+.under
+    font-size: 13px
+    color: #fff
+    margin-bottom: 10px
+.btn-title
+    display: flex
+.btn-t
+    font-size: 10px
+    margin: 5px
+    color: #fff
+    border: none
+    border-radius: 6px
+    font-family: 'Overpass', sans-serif
+.butt__transp
+    background-color: transparent
+    border: 1px solid $orange-color
+.num
+    font-size: 30px
+    margin: 10px
+    color: #13d11c
+.text
+    color: #fff
+    font-size: 10px
+    margin: 0 14px
+.statis
+    display: flex
+
+//2 section//
+.second-section
+    background-color: $main-color
+.about
+    display: flex
+    padding: 5px
+.title-about
+    padding: 15px 0
+.und-tit
+    margin-bottom: 10px
+.tit-ab
+    color: #13d11c
+h2
+    color: $green-dark-color
+.text-tit
+    color: $green-dark-color
+
+.img-ab
+    background-image: url(https://i.pinimg.com/564x/32/84/af/3284af4bf0897ca90f191c9d1f25dcd8.jpg)
+    background-size: contain
+    background-repeat: no-repeat
+    height: 151px
+    width: 120px
+    border-top-left-radius: 30px
+    border-bottom-right-radius: 66%
+.img-about
+    display: flex
+    align-items: center
+.butt2
+    color: #fff
+    border: none
+    border-radius: 15px
+    font-family: 'Overpass', sans-serif
+
+///3 section///
+.third-section
+    background-color: $green-dark-color
+    height: 765px
+.featured
+    display: flex
+    flex-direction: column
+    align-items: center
+.featur-title
+    color: #13d11c
+    padding: 15px
+h3
+    color: #fff
+.white-sq
+    height: 170px
+    width: 170px
+    margin: 0 auto
+    background-color: #fff
+    padding: 15px
+    margin-bottom: 15px
+    &:last-child
+        margin-bottom: 0px
+.icon-sq
+    height: 40px
+    width: 40px
+    background-color: $green-dark-color
+    display: flex
+    justify-content: center
+    align-items: center
+    margin-bottom: 10px
+.fa-regular, .fa-brands, .fa-regular 
+    color: #fff
+.sq
+    margin-bottom: 10px
+.sq-title
+    font-size: 17px
+    color: $green-dark-color
+.sq-text
+    font-size: 14px
+    color: $green-dark-color
+
+    //4 section///
+.four-section
+    background-color: $main-color
+.project-title
+    display: flex
+    flex-direction: column
+    align-items: center
+    span
+        color: $green-dark-color
+        margin-bottom: 15px
+h4
+    font-size: 35px
+    color: $green-dark-color
+.sq-interrior
+    width: 170px
+    margin: 0 auto
+    margin-bottom: 15px
+.img-inter
+    background-size: contain
+    background-repeat: no-repeat
+    width: 170px
+    height: 200px
+    margin-bottom: 10px
+.name
+    margin-bottom: 15px
+.name-inter
+    font-size: 25px
+.img-inter1
+    background-image: url(https://i.pinimg.com/564x/ce/a2/e6/cea2e61044a76632e75ba8212c3dd135.jpg)
+.fa-chevron-right
+    color: $orange-color
+.more
+    color: $orange-color
+    text-decoration: none
+.learn-more
+    margin-bottom: 15px
+.about-inter
+    margin-bottom: 15px
+.img-inter2
+    background-image: url(https://i.pinimg.com/564x/f5/96/c8/f596c854d965c8a19c366426c34641a2.jpg)
+.img-inter3
+    background-image: url(https://i.pinimg.com/564x/30/96/fb/3096fb7a28808e98ea032ff0c3c23d6b.jpg)
+.img-inter4
+    background-image: url(https://i.pinimg.com/564x/d1/b7/ad/d1b7ad5a761f0f7293fd9de1e660a7e6.jpg)
+.img-inter5
+    background-image: url(https://i.pinimg.com/564x/ad/ef/b8/adefb8fceb4b135917d8931e04773784.jpg)
+.img-inter6
+    background-image: url(https://i.pinimg.com/564x/ad/70/40/ad7040383ad3c73f3c96df4e83cea30c.jpg)
+
+    //5 section////
+.section-five
+    background-color: $green-dark-color
+.feedback, .client-profil
+    display: flex
+    align-items: center
+    padding-bottom: 10px
+h4
+    color: $green-dark-color
+h5, .feed-back-text, .name-c, .name2
+    color: #fff
+h5
+    font-size: 20px
+.feed-text
+    margin-bottom: 10px
+.feddback-img
+    background-image: url(https://i.pinimg.com/564x/87/0d/9d/870d9d9d4779a625bc9bb0c989fdfe38.jpg)
+    background-size: contain
+    background-repeat: no-repeat
+    height: 151px
+    width: 123px
+    border-radius: 10px
+
+
+    ///6 section
+
+.footer
+    background-color: $main-color
+    padding-bottom: 15px
+.wrap-foot
+    display: flex
+    flex-direction: column
+    align-items: center
+    text-align: center
+h6
+    font-size: 25px
+    color: $green-dark-color
+.btn-book
+    font-size: 15px
+    color: white
+    border-radius: 15px
+    border: none
+    padding: 9px
+    font-family: 'Overpass', sans-serif
+@import PC
